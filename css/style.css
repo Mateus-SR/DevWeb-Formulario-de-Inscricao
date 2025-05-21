@@ -7,13 +7,14 @@
 
     body {
         font-family: 'Comfortaa';
-        font-size: 12px;
-        background-color: lightcoral;
+        font-size: 14px;
+        background: linear-gradient(to bottom left, #fc7f94, #ffb8a5);;
     }
     
     .titulo {
         font-family: 'Proxima Nova';
         font-size: 24px;
+        border: 2px solid #58010d7f;
         background-color: lightpink;
         border-radius: 15px;
         padding: 10px 10px 10px 10px;
@@ -22,46 +23,94 @@
 
     }
 
-}
+    .container-geral {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 60%;
+        border: 2px solid #58010d7f;
+        border-radius: 10px;
+        background: linear-gradient(to bottom right, #fc7f94, #ffb8a5);
+    }
 
-.container-geral-pc {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-    border-radius: 10px;
-    background: linear-gradient(120deg, #ffa1b1, #fcbfae);
-}
-
-form {
-    border: 2px solid #aaa;
-    border-radius: 10px;
+    form {
+        border-radius: 10px;
+        max-width: 800px;
+        width: 100%;
+    }
     
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 50%;
-    max-height: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        font-family: 'Comfortaa';
+        font-size: 13px;
+        background: linear-gradient(to bottom left, #fc7f94, #ffb8a5);;
+    }
+    
+    .titulo {
+        font-family: 'Proxima Nova';
+        font-size: 20px;
+        border: 2px solid #58010d7f;
+        background-color: lightpink;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .container-geral {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        border: 2px solid #58010d7f;
+        border-radius: 10px;
+        background: linear-gradient(to bottom right, #fc7f94, #ffb8a5);
+    }
+
+    form {
+        border-radius: 10px;
+        max-width: 600px;
+        width: 100%;
+    }
+    
 }
 
 .item {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
     align-items: flex-start;
     justify-content: flex-start;
 
 }
 
-
-input {
-    min-width: 40%;
-    max-height: 20%;
+/*  Aqui, selecionamos apenas o input de alguns tipos,
+    para não conflitar com os botões de envio */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+#tipoParticipante, #genero {
+    font-size: 12px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+input:focus {
+    border-color: #58010d;
+    ;
+    outline: none;
+  }
 
 
 .botoes {
@@ -71,16 +120,47 @@ input {
     justify-content: center;
 }
 
+input[type="submit"],
+input[type="button"] {
+    margin: auto;
+    width: 33%;
+    padding: 8px 0px 8px 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #be2424;
+    transition: all 0.8s ease; 
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    font-size: 18px;
+    background-color: #ff7a90;
+    border-radius: 6px;
+    color: #58010d;
+    transition: all 0.1s ease; 
+}
+
 textarea {
+    font-size: 13px;
+    text-align-last: justify;
     min-width: 100%;
-    min-height: 115%;
+    min-height: 120%;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
+    padding: 5px 0px 25px 0px;
 }
 
 footer {
-    padding: 100px;
+    padding: 30px 0px 0px 20px;
     text-align: center;
+    color: black;
+    font-weight: bold;
+    transition: all 0.8s ease;
+}
 
-
+footer:hover {
+    color: #58010d;
+    transition: all 0.8s ease;
 }

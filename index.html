@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+      @import url(css/style.css);
+      /* @import url(css/style_mobile.css); Não precisamos mais desse cara aqui*/
+    </style>
 
 </head>
 <body>
     <h1 class="titulo">Formulário de Inscrição </h1>
-    <div class="container-geral-pc">
+    <div class="container-geral">
  
 
     <form action="" method="">
-
+        <br>
         <div class="item">
         <label for="Nome">Nome: </label>
-        <input type="text" id="Nome" name="nome" required><br><br>
+        <input type="text" id="Nome" name="nome" required>
         </div>
 
         <div class="item">
         <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required>
         </div>
 
         <div class="item">
         <label for="telefone">Telefone: </label>
-        <input type="tel" id="telefone" name="telefone"><br><br>
+        <input type="tel" id="telefone" name="telefone">
         </div>
 
         <div class="item">
         <label for="datanasc">Data Nascimento: </label>
-        <input type="date" id="datanasc" name="datanasc"><br><br>
+        <input type="date" id="datanasc" name="datanasc">
         </div>
 
         <div class="item">
@@ -44,11 +47,11 @@
             <option value="nãoInformar">Prefiro Não Informar</option>
         </select>
             </div>
-        <br><br>
+        
     
         <div class="item">
         <label for="mensagem">Observações</label>
-        <textarea name="mensagem" id="mensagem" rols="10" cols="40" maxlength="200"></textarea><br><br>
+        <textarea name="mensagem" id="mensagem" rols="10" cols="40" maxlength="200"></textarea>
         </div>
 
         <div class="item">
@@ -59,22 +62,20 @@
             <option value="voluntario">Voluntário</option>
         </select>
         </div>
-        
-        <br><br>
 
         <div class="item">
-        <label for="termos">Aceito os Termos</label>
-        <input type="checkbox" value="Aceito os Termos" required><br><br>
+        <label for="termos">Declaro que li e aceito os Termos de Serviço </label>
+        <input type="checkbox" value="Aceito os Termos" required>
         </div>
 
         <div class="botoes">
         <input type="submit" value="Enviar" >
         <input type="button" value="Limpar"><br>
-        </div>
+        </div><br><br>
 
     </form>
 </div>
 
 </body>
-<footer>Gepeto Tecnology 2025</footer>
+<footer>Geppetto Technology - 2025<br>Nenhum direito reservado.</footer>
 </html>
